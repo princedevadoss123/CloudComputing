@@ -3,7 +3,7 @@ server:
 spring:
   devtools:
     restart:
-      enabled: false
+      enabled: true
   datasource:
     url: jdbc:mysql://localhost:3306/Cloud?createDatabaseIfNotExist=true
     username: prince
@@ -14,3 +14,5 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  thymeleaf:
+    mode: LEGACYHTML5
